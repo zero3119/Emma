@@ -1,0 +1,64 @@
+nav{
+    position:static;
+    display: flex;
+    background-color: white;
+    height: 5em;
+    text-align: end;
+    justify-content:space-between;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+ul{
+    padding: 10px 40px 0 0px;
+    align-content: center;
+}
+
+li{
+    position:relative;
+    display: inline-block;
+    list-style: none;
+
+}
+
+h1{
+    padding: 0px 0 0px 25px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin:0 0 0 20px; 
+    font-size: 25px;
+}
+
+.button:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+main{
+    display:grid;
+    border: solid black 5px;
+    justify-content: center;
+}
+
+h2{
+    width: 1000px;
+    text-align: center;
+}
+
+h3{
+    width: 1000px;
+    text-align: center;
+}
