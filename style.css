@@ -1,64 +1,202 @@
-nav{
-    position:static;
-    display: flex;
-    background-color: white;
-    height: 5em;
-    text-align: end;
-    justify-content:space-between;
-    
+
+
+*{
+    font-family: 'DM sans', sans-serif, Arial, Helvetica;
+    font-weight: bold;
+}
+
+h2, p{
+    color: black;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f5f2ee;
 }
 
-ul{
-    padding: 10px 40px 0 0px;
-    align-content: center;
-}
-
-li{
-    position:relative;
+.navbar{
+    position: fixed;
     display: inline-block;
-    list-style: none;
+    width: 100vw;
+    background-color: #f5f2ee;
+    height: 6rem;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.logo{
+    max-width: 20rem;
+    margin-left: 10rem;
+    padding: 0;
+    height: 6rem;
+    color: black;
+    display: inline-block;
+}
+
+.logo img{
+    display: inline-block;
+    padding: 0;
+    height: 6rem;
+    object-fit: contain;
 }
 
 h1{
-    padding: 0px 0 0px 25px;
-    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+    margin: 3rem 0 0 1.25rem;
+    font-size: 1.75rem;
+    user-select: none;
+}
+
+ul{
+    position: absolute;
+    display: inline-block;
+    margin-top: 1rem 0 0 0;
+    padding:0;
+    right: 0;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    margin: 0 2rem 0 0; 
+    font-size: 1.25rem;
 }
 
 a{
+    padding: 0;
+    margin: 0;
     text-decoration: none;
+    color: #056427;
 }
 
-.button{
-    border-radius: 5px;
-    color: black;
-    padding: 2px;
-    margin:0 0 0 20px; 
-    font-size: 25px;
+a p{
+    padding: .25rem;
+    margin: 0;
 }
 
-.button:hover{
-    background-color: rgb(207, 207, 207);
+li:hover{
+    background-color:#dedcd8;
+    border-radius: .5rem;
 }
 
-main{
-    display:grid;
-    border: solid black 5px;
+.video{
+    padding-top: 8rem;
+    text-align: center;
+
+}
+
+.video h2{
+    line-height: 4rem;
+    width: 70rem;
+    font-size: 2.5rem;
+    margin:auto;
+}
+
+.video div{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background-image:radial-gradient(#bded7e 10%,#50d2c3);
+    width: 70rem;
+    height: 30rem;
+    margin: auto;
+    border-radius: 10px;
+}
+
+video{
+    position: relative;
+    height: 80%;
+    margin: auto;
+}
+
+.agenda{
+    position: absolute;
+
+}
+
+.logos-container{
+    margin-top: 2rem;
+    margin: auto;
+    width: 70rem;
+    height: 10rem;
+    background-color: black;
+}
+
+.logos-container img{
+    width: 9.5rem;
+}
+
+.schedule{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 60rem;
+    position: relative;
 }
 
 h2{
-    width: 1000px;
-    text-align: center;
+    font-size: 2.5rem;
 }
 
-h3{
-    width: 1000px;
-    text-align: center;
+.schedule h3{
+    font-size: 2rem;
+    color: #399f93;
 }
+
+.text{
+    width: 500px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+}
+
+.calender{
+    width: 400px;
+    margin: 1rem 0 0 auto;
+}
+
+
+.enfoque{
+    margin: 5rem auto;
+    width: 60rem;
+    position:relative;
+}
+
+.enfoque h1{
+    display: inline-block;
+    width: 20rem;
+    height: 5rem;
+}
+
+.enfoque p{
+    width: 500px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.enfoque .crc-photo{
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    right: 0;
+    left: auto;
+}
+
+
+.cont{
+    height: 30rem;
+    width: 25rem;
+    border: solid green 1px;
+    display: inline-block
+}
+.cont img{
+    width: 150px;
+    display: inline-block;
+}
+
+
