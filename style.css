@@ -10,10 +10,30 @@ h2, p{
 }
 
 body{
+    position: relative;
     margin: 0;
     padding: 0;
+    width:100%;
     background-color: #f5f2ee;
     overflow-x: hidden;
+}
+
+main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #f5f2ee;
+    overflow: hidden;
+    @media screen and (max-width: 1100px){
+        width: 70rem;
+    }
+}
+
+
+html{
+    width: 100%;
 }
 
 .navbar{
@@ -21,83 +41,117 @@ body{
     display: inline-block;
     width: 100%;
     background-color: #f5f2ee;
-    height: 6rem;
+    height: 5rem;
     padding: 0;
     margin: 0;
     top: 0;
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 900px){
+        height: 10rem;
+    }
 }
 
 .logo{
-    max-width: 20rem;
     margin-left: 10rem;
     padding: 0;
-    height: 6rem;
+    height: 5rem;
+    width: 20rem;
     color: black;
     display: inline-block;
+    @media screen and (max-width: 900px){
+        margin-left:2rem ;
+    }
 }
 
 .logo img{
     display: inline-block;
     padding: 0;
-    height: 6rem;
+    height: 5rem;
     object-fit: contain;
+    @media screen and (max-width: 900px){
+        height: 10rem;
+    }
 }
 
 h1{
     position: absolute;
     display: inline-block;
-    margin: 3rem 0 0 1.25rem;
-    font-size: 1.75rem;
+    margin: 2rem 0 0 1.25rem;
+    font-size: 2.5rem;
     user-select: none;
+    @media screen and (max-width: 900px){
+        font-size: 2.5rem;
+        margin: 5rem 0 0 1.25rem;
+        font-weight: bolder;
+    }
 }
 
-ul{
+.navbar ul{
     position: absolute;
     display: inline-block;
-    margin-top: 1rem 0 0 0;
+    margin-top: 0rem 0 0 0;
     padding:0;
     right: 0;
 }
 
-li{
+.navbar li{
     position: relative;
     display: inline-block;
-    margin: 0 2rem 0 0; 
+    margin: 0 1rem 0 0; 
+    padding: 0 .5rem 0 .5rem;
     font-size: 1.25rem;
+    @media screen and (max-width: 900px){
+        font-size: 1.75rem;
+        margin: 0 1rem 0 0; 
+    }
 }
 
 a{
     padding: 0;
     margin: 0;
     text-decoration: none;
-    color: #056427;
+    color: black;
 }
 
-a p{
-    padding: .25rem;
+a{
     margin: 0;
+    padding: .25rem;
 }
 
-li:hover{
+a:hover{
     background-color:#dedcd8;
     border-radius: .5rem;
 }
 
 .video{
-    padding-top: 8rem;
-    width: 70rem;
+    position: relative;
+    padding-top: 6rem;
+    width: 60rem;
     margin: auto;
     position: relative;
+    overflow-x: hidden;
+    @media screen and (max-width: 900px){
+        width:70rem;
+    }
 }
 
 .video h2{
     line-height: 4rem;
-    width: 70rem;
-    font-size: 3rem;
+    width: 60rem;
+    font-size: 2.5rem;
     margin:auto;
     text-align: center;
+    @media screen and (max-width: 900px){
+
+        width: auto;
+            font-size: 4rem;
+            margin:auto;
+            text-align: center;
+            line-height: 6rem;
+            width: 48rem;
+            margin-top: 5rem;
+        }
 }
 
 .empezar{
@@ -106,11 +160,17 @@ li:hover{
         #50d2c3 80%
         );
     border: transparent;
-    border-radius: 15px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 3rem;
-    margin: 1rem 0 2.5rem 2.5rem;
+    font-size: 2.5rem;
+    margin: .5rem 2rem 1.5rem 1.5rem;
     padding: 0 1rem;
+    @media screen and (max-width: 900px){
+        width: auto;
+            margin-left: 12rem;
+            font-size: 3rem;
+            padding: .5rem 2rem;
+        }
 }
 .empezar:hover{
     background-image: radial-gradient( farthest-corner at  240px 10px,
@@ -124,19 +184,25 @@ li:hover{
     display: flex;
     align-items: center;
     background-image:radial-gradient(#bded7e 10%,#50d2c3);
-    width: 70rem;
-    height: 30rem;
-    margin: auto;
+    width: 60rem;
+    height: 25rem;
+    margin: 0 auto 0 auto;
     border-radius: 10px;
+    @media screen and (max-width: 900px){
+        width: auto;
+        height: 40rem;
+        border-radius: 0;
+    }
 }
 
 video{
     position: relative;
-    height: 80%;
+    height: 85%;
     margin: auto;
     border-radius: 10px;
     cursor: pointer;
 }
+
 
 .agenda{
     position: absolute;
@@ -147,56 +213,100 @@ video{
     font-size: 2.5rem;
     padding: 0 1.75rem;
     left: 47.5rem;
-    top: 24.75rem;
+    top: 20.75rem;
+    width: auto;
+    @media screen and (max-width: 900px){
+            margin-left: 12rem;
+            font-size: 3rem;
+            padding: .5rem 2rem;
+            top: 33rem;
+            left: 43rem;
+        }
 }
 
 .video p{
     margin:  1.5rem auto 2rem auto;
-    width: 35rem;
-
+    width: 50rem;
+    font-size: 2rem;
+    @media screen and (max-width: 900px){
+        margin: 4rem auto 4rem auto;
+        font-size: 2rem;
+        padding: .5rem 2rem;
+        top: 34rem;
+        left: 40rem;
+        width: 49rem;
+    }
 }
 
 .agenda{
     position: absolute;
-
+    
 }
 
 .logos-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 2rem;
     margin: 0 auto 3rem auto;
-    width: 70rem;
+    width: 60rem;
     height: 10rem;
     background-color: black;
     border-radius: 10px;
-
+    @media screen and (max-width: 900px){
+        height:20rem;
+        border-radius: 0;
+        width:70rem;
+    }
 }
 
 .logos-container img{
-    width: 9.5rem;
+    width: 6rem;
+    @media screen and (max-width: 900px){
+        width: 8rem;
+    }
 }
 
 .schedule{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 60rem;
+    width: 55rem;
+    padding-left: 5rem;
     position: relative;
+    @media screen and (max-width: 900px){
+        width: 65rem;
+    }
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
+    @media screen and (max-width: 900px){
+        font-size: 4rem;
+    }
 }
 
 .schedule h3{
     font-size: 2rem;
     color: #399f93;
+    @media screen and (max-width: 900px){
+        font-size: 4rem;
+        text-align:justify;
+        line-height: 4rem;
+        width: 90%;
+    }
 }
 
 .text{
-    width: 500px;
+    width: 450px;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    @media screen and (max-width: 900px){
+        font-size: 3rem;
+        width: 500px;
+        line-height: 3.25rem;
+    }
 
 }
 
@@ -205,6 +315,11 @@ h2{
     margin: 1rem 0 0 auto;
     border-radius: 10px;
     border:solid rgb(157, 147, 136) 1px;
+    @media screen and (max-width: 900px){
+        width: 500px;
+        height: 700px;
+        margin: 15rem 0 0 2rem;
+    }
 }
 
 .aqui{
@@ -218,34 +333,63 @@ h2{
     padding: 0 1.75rem;
     left: 39.5rem;
     bottom: -1.75rem;
+    @media screen and (max-width: 900px){
+        bottom: 15rem;
+        left: 41rem;
+        font-size: 4rem;
+    }
 }
 
 
-.enfoque{
+#enfoque{
     position:relative;
-    margin: 15rem auto;
-    width: 60rem;
+    margin: 0rem auto 10rem auto;
+    width: 55rem;
+    padding-left: 5rem;
+    @media screen and (max-width: 900px){
+        height: 95rem;
+        overflow-x: hidden;
+        width: 65rem;
+    }
 }
 
-.enfoque h1{
+#enfoque h2{
     display: inline-block;
     width: 20rem;
     height: 5rem;
+    margin-top:15rem;
+    @media screen and (max-width: 900px){
+        font-size: 4rem;
+        line-height: 3.25rem;
+    }
 }
 
-.enfoque p{
-    width: 30rem;
+#enfoque p{
+    width: 28rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    @media screen and (max-width: 900px){
+        font-size: 3rem;
+        width: 500px;
+        line-height: 3.25rem;
+
+    }
 }
 
 .crc-photo{
-    display: inline-block;
+
     position: absolute;
-    width: 300px;
+    width: 400px;
     border-radius: 50%;
     right: 0;
-    top: -3rem;
+    top: 10rem;
+    @media screen and (max-width: 900px){
+        width:600px;
+        right: -10rem;
+        top: 10rem;
+
+
+    }
 
 }
 
@@ -253,12 +397,15 @@ h2{
 .cont{
     position: relative;
     display: inline-block;
-    width: 29.5rem;
+    width: 26rem;
     text-align: center;
 
 }
 .cont img{
-    width: 150px;
+    width: 250px;
+    @media screen and (max-width: 900px){
+        width: 250px;
+    }
 }
 
 .cont p{
@@ -273,8 +420,14 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 60rem;
-    margin: auto;
+    width: 55rem;
+    padding-left: 5rem;
+    margin: 0 auto -10rem auto;
+    @media screen and (max-width: 900px){
+        height:60rem;
+        margin: 0 auto 5.25rem auto;
+        width: 65rem;
+    }
 
 }
 
@@ -286,17 +439,100 @@ h2{
 
 .sistema div{
     width: 15rem;
-
     height: 30rem;
     text-align: left;
+    @media screen and (max-width: 900px){
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
 }
 
 .sistema img{
     display: block;
     width: 10rem;
     margin-left: 12%;
+    @media screen and (max-width: 900px){
+        width:13rem;
+        margin: 0;
+    }
 
 }
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    background-color: #f5f2ee;
+    padding: 0;
+    margin: 1rem auto 0 auto;
+    box-shadow: 0px -10px 15px -10px rgba(225, 225, 225, 0.99);
+    @media screen and (max-width: 1100px){
+        width:70rem ;
+        margin: 7rem auto 0 auto;
+    }
+}
+
+footer .logo{
+    height: 3rem;
+    margin: 1.5rem 0 0 0rem;
+    padding: 0;
+    width: 20rem;
+    color: black;
+    display: inline-block;
+    @media screen and (max-width: 900px){
+        margin-left:0rem ;
+    }
+}
+
+footer .img-logo{
+    display: inline-block;
+    padding: 0;
+    height: 3rem;
+    object-fit: contain;
+    margin-left: 1.25rem;
+    @media screen and (max-width: 1100px){
+        height:4rem;
+    }
+}
+footer h3{
+    position: absolute;
+    display: inline-block;
+    margin: 2rem 0 0 1.25rem;
+    font-size: 1rem;
+    user-select: none;
+    @media screen and (max-width: 900px){
+        font-size: 1.5rem;
+        margin: 1rem 0 0 1.25rem;
+        font-weight: bolder;
+    }
+}
+
+footer ul{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    width: 60rem;
+    margin: 1rem auto 0 auto;
+    padding:0;
+    left: 0;
+    justify-content:space-around;
+}
+
+footer li{
+    position: relative;
+    display: inline-block;
+    margin: 2rem 1rem 0 5rem; 
+    padding: 0 .5rem 0 .5rem;
+    font-size: 1.25rem;
+    justify-content: space-evenly;
+    @media screen and (max-width: 900px){
+        font-size: 1.75rem;
+        margin: 2rem 1rem 0 0; 
+    }
+}
+
+
+
 
 
 
@@ -307,19 +543,26 @@ h2{
 }
 
 .a{
-    top: -10rem;
-    left: -30rem;
+    top: 0rem;
+    left: 0rem;
 }
 
 .b{
-    right: -40rem;
-    bottom: 8rem;
+    top: 15rem;
+    right: 0rem;
     width: 50rem;
 }
 
 .c{
-    bottom: -5rem;
-    left: -50rem;
+    bottom: 0rem;
+    left: -20rem;
     width: 40rem;
 
+}
+
+.d{
+    bottom: 60rem;
+    left:60rem;
+    width: 50rem;
+    transform: rotate(70deg);
 }
